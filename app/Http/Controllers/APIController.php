@@ -18,7 +18,7 @@ class APIController extends Controller
             $product->name = $productData['name'];
             $product->price = $productData['price'];
             $product->image = $productData['image'];
-            $product->promotion_price = $productData['promotiom_price'];
+            $product->promotion_price = $productData['promotion_price'];
             $product->isActive = $productData['isActive'];
             $product->category_id = $productData['category_id'];
             $product->shop_id = $productData['shop_id'];
