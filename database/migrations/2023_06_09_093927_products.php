@@ -18,8 +18,11 @@ return new class extends Migration
             $table->string('image');
             $table->float('promotion_price');
             $table->boolean('isActive');
+            $table->string('tag');
             $table->unsignedInteger('category_id');
             $table->foreign('category_id')->references('category_id')->on('categories');
+            $table->unsignedBigInteger('shop_id');
+            $table->foreign('shop_id')->references('shop_id')->on('shops');
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('products');
     }
 };

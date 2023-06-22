@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('location');
             $table->string('description');
+            $table->string('timeOpen');
+            $table->string('cost');
             $table->string('tag');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('user_id')->on('users');
