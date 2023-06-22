@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('image');
             $table->float('promotion_price');
             $table->boolean('isActive');
-            $table->unsignedInteger('category_id');
+            $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('category_id')->on('categories');
             $table->unsignedBigInteger('shop_id');
             $table->foreign('shop_id')->references('shop_id')->on('shops');

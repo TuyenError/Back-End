@@ -21,3 +21,8 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 
 Route::get('/get-shops',[APIController::class,'getShops']);
 Route::get('/get-shops/{id}',[APIController::class,'getOneShops']);
+
+Route::get('/get-categories/{id}',[APIController::class,'getCategories']);
+Route::get('/get-products/{id}',[APIController::class,'getProductsBaseOnShop']);
+
+
