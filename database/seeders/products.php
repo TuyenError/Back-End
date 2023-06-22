@@ -13,7 +13,7 @@ class Products extends Seeder
      */
     public function run():void
     {
-        DB::table('roles')->insert([
+        DB::table('products')->insert([
                     [
                         "product_id" => "1",
                         "name" => "Cơm Hộp Nhôm Gà xối mỡ + Chanh Dây Tươi",
@@ -22,7 +22,7 @@ class Products extends Seeder
                         "promotion_price" => "37000",
                         "isActive" => true,
                         "category_id" => "7",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "2",
@@ -32,7 +32,7 @@ class Products extends Seeder
                         "promotion_price" => "37000",
                         "isActive" => true,
                         "category_id" => "7",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "3",
@@ -42,7 +42,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "7",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "4",
@@ -52,7 +52,7 @@ class Products extends Seeder
                         "promotion_price" => "7000",
                         "isActive" => true,
                         "category_id" => "18",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "5",
@@ -62,7 +62,7 @@ class Products extends Seeder
                         "promotion_price" => "10000",
                         "isActive" => true,
                         "category_id" => "18",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "6",
@@ -72,7 +72,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "15",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "7",
@@ -82,7 +82,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "15",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "8",
@@ -92,7 +92,7 @@ class Products extends Seeder
                         "promotion_price" => "12000",
                         "isActive" => true,
                         "category_id" => "18",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "9",
@@ -102,7 +102,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "15",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "10",
@@ -112,7 +112,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "15",
-                        "shop_id " => "1 "
+                        "shop_id" => "1" 
                     ],
                     [
                         "product_id" => "11",
@@ -122,7 +122,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "12",
@@ -132,7 +132,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "13",
@@ -142,7 +142,7 @@ class Products extends Seeder
                         "promotion_price" => "17000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "2 "
+                        "shop_id" => "2"
                     ],
                     [
                         "product_id" => "14",
@@ -152,7 +152,7 @@ class Products extends Seeder
                         "promotion_price" => "38000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "15",
@@ -162,7 +162,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "21",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "16",
@@ -172,7 +172,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "21",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "17",
@@ -182,7 +182,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "21",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "18",
@@ -192,7 +192,7 @@ class Products extends Seeder
                         "promotion_price" => "8000",
                         "isActive" => true,
                         "category_id" => "24",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "19",
@@ -202,7 +202,7 @@ class Products extends Seeder
                         "promotion_price" => "8000",
                         "isActive" => true,
                         "category_id" => "24",
-                        "shop_id " => "2 "
+                        "shop_id" => "2" 
                     ],
                     [
                         "product_id" => "20",
@@ -212,7 +212,7 @@ class Products extends Seeder
                         "promotion_price" => "18000",
                         "isActive" => true,
                         "category_id" => "24",
-                        "shop_id " => "2 "
+                        "shop_id" => "2"
                     ],
                     [
                         "product_id" => "21",
@@ -222,7 +222,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "22",
@@ -232,7 +232,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "23",
@@ -242,7 +242,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "24",
@@ -252,7 +252,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "27",
-                        "shop_id " => "3 "
+                        "shop_id" => "3"
                     ],
                     [
                         "product_id" => "25",
@@ -262,7 +262,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "27",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "26",
@@ -272,7 +272,7 @@ class Products extends Seeder
                         "promotion_price" => "38000",
                         "isActive" => true,
                         "category_id" => "17",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "27",
@@ -282,7 +282,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "17",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "28",
@@ -292,7 +292,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "17",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "29",
@@ -302,7 +302,7 @@ class Products extends Seeder
                         "promotion_price" => "47000",
                         "isActive" => true,
                         "category_id" => "17",
-                        "shop_id " => "3 "
+                        "shop_id" => "3" 
                     ],
                     [
                         "product_id" => "30",
@@ -312,7 +312,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "17",
-                        "shop_id " => "3 "
+                        "shop_id" => "3"
                     ],
                     [
                         "product_id" => "31",
@@ -322,7 +322,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "32",
@@ -332,7 +332,7 @@ class Products extends Seeder
                         "promotion_price" => "12000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "33",
@@ -342,7 +342,7 @@ class Products extends Seeder
                         "promotion_price" => "28000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "34",
@@ -352,7 +352,7 @@ class Products extends Seeder
                         "promotion_price" => "39000",
                         "isActive" => true,
                         "category_id" => "8",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "35",
@@ -362,7 +362,7 @@ class Products extends Seeder
                         "promotion_price" => "43000",
                         "isActive" => true,
                         "category_id" => "8",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "36",
@@ -372,7 +372,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "8",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "37",
@@ -382,7 +382,7 @@ class Products extends Seeder
                         "promotion_price" => "23000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "38",
@@ -392,7 +392,7 @@ class Products extends Seeder
                         "promotion_price" => "21000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "39",
@@ -402,7 +402,7 @@ class Products extends Seeder
                         "promotion_price" => "23000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "40",
@@ -412,7 +412,7 @@ class Products extends Seeder
                         "promotion_price" => "21000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "4 "
+                        "shop_id" => "4" 
                     ],
                     [
                         "product_id" => "41",
@@ -422,7 +422,7 @@ class Products extends Seeder
                         "promotion_price" => "60000",
                         "isActive" => true,
                         "category_id" => "3",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "42",
@@ -432,7 +432,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "3",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "43",
@@ -442,7 +442,7 @@ class Products extends Seeder
                         "promotion_price" => "125000",
                         "isActive" => true,
                         "category_id" => "3",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "44",
@@ -452,7 +452,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "45",
@@ -462,7 +462,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "5 "
+                        "shop_id" => "5"
                     ],
                     [
                         "product_id" => "46",
@@ -472,7 +472,7 @@ class Products extends Seeder
                         "promotion_price" => "60000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "47",
@@ -482,7 +482,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "48",
@@ -492,7 +492,7 @@ class Products extends Seeder
                         "promotion_price" => "12000",
                         "isActive" => true,
                         "category_id" => "18",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "49",
@@ -502,7 +502,7 @@ class Products extends Seeder
                         "promotion_price" => "12000",
                         "isActive" => true,
                         "category_id" => "18",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "50",
@@ -512,7 +512,7 @@ class Products extends Seeder
                         "promotion_price" => "15000",
                         "isActive" => true,
                         "category_id" => "18",
-                        "shop_id " => "5 "
+                        "shop_id" => "5" 
                     ],
                     [
                         "product_id" => "51",
@@ -522,7 +522,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "11",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "52",
@@ -532,7 +532,7 @@ class Products extends Seeder
                         "promotion_price" => "91000",
                         "isActive" => true,
                         "category_id" => "11",
-                        "shop_id " => "6 "
+                        "shop_id" => "6"
                     ],
                     [
                         "product_id" => "53",
@@ -542,7 +542,7 @@ class Products extends Seeder
                         "promotion_price" => "78000",
                         "isActive" => true,
                         "category_id" => "11",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "54",
@@ -552,7 +552,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "12",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "55",
@@ -562,7 +562,7 @@ class Products extends Seeder
                         "promotion_price" => "85000",
                         "isActive" => true,
                         "category_id" => "12",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "56",
@@ -572,7 +572,7 @@ class Products extends Seeder
                         "promotion_price" => "65000",
                         "isActive" => true,
                         "category_id" => "12",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "57",
@@ -582,7 +582,7 @@ class Products extends Seeder
                         "promotion_price" => "78000",
                         "isActive" => true,
                         "category_id" => "16",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "58",
@@ -592,7 +592,7 @@ class Products extends Seeder
                         "promotion_price" => "60000",
                         "isActive" => true,
                         "category_id" => "16",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "59",
@@ -602,7 +602,7 @@ class Products extends Seeder
                         "promotion_price" => "103000",
                         "isActive" => true,
                         "category_id" => "16",
-                        "shop_id " => "6 "
+                        "shop_id" => "6"
                     ],
                     [
                         "product_id" => "60",
@@ -612,7 +612,7 @@ class Products extends Seeder
                         "promotion_price" => "80000",
                         "isActive" => true,
                         "category_id" => "16",
-                        "shop_id " => "6 "
+                        "shop_id" => "6" 
                     ],
                     [
                         "product_id" => "61",
@@ -622,7 +622,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "62",
@@ -632,7 +632,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "63",
@@ -642,7 +642,7 @@ class Products extends Seeder
                         "promotion_price" => "16000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "64",
@@ -652,7 +652,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "65",
@@ -662,7 +662,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "7 "
+                        "shop_id" => "7"
                     ],
                     [
                         "product_id" => "66",
@@ -672,7 +672,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "19",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "67",
@@ -682,7 +682,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "19",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "68",
@@ -692,7 +692,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "19",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "69",
@@ -702,7 +702,7 @@ class Products extends Seeder
                         "promotion_price" => "28000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "70",
@@ -712,7 +712,7 @@ class Products extends Seeder
                         "promotion_price" => "80000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "7 "
+                        "shop_id" => "7" 
                     ],
                     [
                         "product_id" => "71",
@@ -722,7 +722,7 @@ class Products extends Seeder
                         "promotion_price" => "19000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "72",
@@ -732,7 +732,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "73",
@@ -742,7 +742,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "8 "
+                        "shop_id" => "8"
                     ],
                     [
                         "product_id" => "74",
@@ -752,7 +752,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "75",
@@ -762,7 +762,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "76",
@@ -772,7 +772,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "77",
@@ -782,7 +782,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "78",
@@ -792,7 +792,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "79",
@@ -802,7 +802,7 @@ class Products extends Seeder
                         "promotion_price" => "13000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "80",
@@ -812,7 +812,7 @@ class Products extends Seeder
                         "promotion_price" => "13000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "8 "
+                        "shop_id" => "8" 
                     ],
                     [
                         "product_id" => "81",
@@ -822,7 +822,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "13",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "82",
@@ -832,7 +832,7 @@ class Products extends Seeder
                         "promotion_price" => "70000",
                         "isActive" => true,
                         "category_id" => "13",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "83",
@@ -842,7 +842,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "13",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "84",
@@ -852,7 +852,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "85",
@@ -862,7 +862,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "86",
@@ -872,7 +872,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "87",
@@ -882,7 +882,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "88",
@@ -892,7 +892,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "9 "
+                        "shop_id" => "9"
                     ],
                     [
                         "product_id" => "89",
@@ -902,7 +902,7 @@ class Products extends Seeder
                         "promotion_price" => "18000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "9 "
+                        "shop_id" => "9"
                     ],
                     [
                         "product_id" => "90",
@@ -912,7 +912,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "9 "
+                        "shop_id" => "9" 
                     ],
                     [
                         "product_id" => "91",
@@ -922,7 +922,7 @@ class Products extends Seeder
                         "promotion_price" => "18000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "92",
@@ -932,7 +932,7 @@ class Products extends Seeder
                         "promotion_price" => "48000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "93",
@@ -942,7 +942,7 @@ class Products extends Seeder
                         "promotion_price" => "33000",
                         "isActive" => true,
                         "category_id" => "19",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "94",
@@ -952,7 +952,7 @@ class Products extends Seeder
                         "promotion_price" => "33000",
                         "isActive" => true,
                         "category_id" => "19",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "95",
@@ -962,7 +962,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "19",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "96",
@@ -972,7 +972,7 @@ class Products extends Seeder
                         "promotion_price" => "33000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "97",
@@ -982,7 +982,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "98",
@@ -992,7 +992,7 @@ class Products extends Seeder
                         "promotion_price" => "47000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "99",
@@ -1002,7 +1002,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "100",
@@ -1012,7 +1012,7 @@ class Products extends Seeder
                         "promotion_price" => "37000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "10 "
+                        "shop_id" => "10"
                     ],
                     [
                         "product_id" => "101",
@@ -1022,7 +1022,7 @@ class Products extends Seeder
                         "promotion_price" => "63000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "102",
@@ -1032,7 +1032,7 @@ class Products extends Seeder
                         "promotion_price" => "63000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "103",
@@ -1042,7 +1042,7 @@ class Products extends Seeder
                         "promotion_price" => "65000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "104",
@@ -1052,7 +1052,7 @@ class Products extends Seeder
                         "promotion_price" => "48000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "105",
@@ -1062,7 +1062,7 @@ class Products extends Seeder
                         "promotion_price" => "70000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "106",
@@ -1072,7 +1072,7 @@ class Products extends Seeder
                         "promotion_price" => "72000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "107",
@@ -1082,7 +1082,7 @@ class Products extends Seeder
                         "promotion_price" => "71000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "108",
@@ -1092,7 +1092,7 @@ class Products extends Seeder
                         "promotion_price" => "62000",
                         "isActive" => true,
                         "category_id" => "6",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "109",
@@ -1102,7 +1102,7 @@ class Products extends Seeder
                         "promotion_price" => "70000",
                         "isActive" => true,
                         "category_id" => "6",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "110",
@@ -1112,7 +1112,7 @@ class Products extends Seeder
                         "promotion_price" => "70000",
                         "isActive" => true,
                         "category_id" => "6",
-                        "shop_id " => "11 "
+                        "shop_id" => "11"
                     ],
                     [
                         "product_id" => "111",
@@ -1122,7 +1122,7 @@ class Products extends Seeder
                         "promotion_price" => "50000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "112",
@@ -1132,7 +1132,7 @@ class Products extends Seeder
                         "promotion_price" => "50000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "113",
@@ -1142,7 +1142,7 @@ class Products extends Seeder
                         "promotion_price" => "50000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "114",
@@ -1152,7 +1152,7 @@ class Products extends Seeder
                         "promotion_price" => "70000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "115",
@@ -1162,7 +1162,7 @@ class Products extends Seeder
                         "promotion_price" => "60000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "116",
@@ -1172,7 +1172,7 @@ class Products extends Seeder
                         "promotion_price" => "65000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "117",
@@ -1182,7 +1182,7 @@ class Products extends Seeder
                         "promotion_price" => "70000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "118",
@@ -1192,7 +1192,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "119",
@@ -1202,7 +1202,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "120",
@@ -1212,7 +1212,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "12 "
+                        "shop_id" => "12"
                     ],
                     [
                         "product_id" => "121",
@@ -1222,7 +1222,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "122",
@@ -1232,7 +1232,7 @@ class Products extends Seeder
                         "promotion_price" => "62000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "123",
@@ -1242,7 +1242,7 @@ class Products extends Seeder
                         "promotion_price" => "63000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "124",
@@ -1252,7 +1252,7 @@ class Products extends Seeder
                         "promotion_price" => "50000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "125",
@@ -1262,7 +1262,7 @@ class Products extends Seeder
                         "promotion_price" => "55000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "126",
@@ -1272,7 +1272,7 @@ class Products extends Seeder
                         "promotion_price" => "60000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "127",
@@ -1282,7 +1282,7 @@ class Products extends Seeder
                         "promotion_price" => "50000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "128",
@@ -1292,7 +1292,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "129",
@@ -1302,7 +1302,7 @@ class Products extends Seeder
                         "promotion_price" => "50000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "130",
@@ -1312,7 +1312,7 @@ class Products extends Seeder
                         "promotion_price" => "59000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "13 "
+                        "shop_id" => "13"
                     ],
                     [
                         "product_id" => "131",
@@ -1322,7 +1322,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "132",
@@ -1332,7 +1332,7 @@ class Products extends Seeder
                         "promotion_price" => "40000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "133",
@@ -1342,7 +1342,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "134",
@@ -1352,7 +1352,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "135",
@@ -1362,7 +1362,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "136",
@@ -1372,7 +1372,7 @@ class Products extends Seeder
                         "promotion_price" => "30000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "137",
@@ -1382,7 +1382,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "138",
@@ -1392,7 +1392,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "139",
@@ -1402,7 +1402,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "140",
@@ -1412,7 +1412,7 @@ class Products extends Seeder
                         "promotion_price" => "39000",
                         "isActive" => true,
                         "category_id" => "2",
-                        "shop_id " => "14 "
+                        "shop_id" => "14"
                     ],
                     [
                         "product_id" => "141",
@@ -1422,7 +1422,7 @@ class Products extends Seeder
                         "promotion_price" => "15000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "142",
@@ -1432,7 +1432,7 @@ class Products extends Seeder
                         "promotion_price" => "23000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "143",
@@ -1442,7 +1442,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "144",
@@ -1452,7 +1452,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "145",
@@ -1462,7 +1462,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "146",
@@ -1472,7 +1472,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "22",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "147",
@@ -1482,7 +1482,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "148",
@@ -1492,7 +1492,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "149",
@@ -1502,7 +1502,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "150",
@@ -1512,7 +1512,7 @@ class Products extends Seeder
                         "promotion_price" => "28000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "15 "
+                        "shop_id" => "15"
                     ],
                     [
                         "product_id" => "151",
@@ -1522,7 +1522,7 @@ class Products extends Seeder
                         "promotion_price" => "55000",
                         "isActive" => true,
                         "category_id" => "5",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "152",
@@ -1532,7 +1532,7 @@ class Products extends Seeder
                         "promotion_price" => "75000",
                         "isActive" => true,
                         "category_id" => "5",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "153",
@@ -1542,7 +1542,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "10",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "154",
@@ -1552,7 +1552,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "10",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "155",
@@ -1562,7 +1562,7 @@ class Products extends Seeder
                         "promotion_price" => "70000",
                         "isActive" => true,
                         "category_id" => "10",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "156",
@@ -1572,7 +1572,7 @@ class Products extends Seeder
                         "promotion_price" => "900000",
                         "isActive" => true,
                         "category_id" => "10",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "157",
@@ -1582,7 +1582,7 @@ class Products extends Seeder
                         "promotion_price" => "95000",
                         "isActive" => true,
                         "category_id" => "10",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "158",
@@ -1592,7 +1592,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "159",
@@ -1602,7 +1602,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "160",
@@ -1612,7 +1612,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "16 "
+                        "shop_id" => "16"
                     ],
                     [
                         "product_id" => "161",
@@ -1622,7 +1622,7 @@ class Products extends Seeder
                         "promotion_price" => "20000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "162",
@@ -1632,7 +1632,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "163",
@@ -1642,7 +1642,7 @@ class Products extends Seeder
                         "promotion_price" => "22000",
                         "isActive" => true,
                         "category_id" => "4",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "164",
@@ -1652,7 +1652,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "165",
@@ -1662,7 +1662,7 @@ class Products extends Seeder
                         "promotion_price" => "18000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "166",
@@ -1672,7 +1672,7 @@ class Products extends Seeder
                         "promotion_price" => "18000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "167",
@@ -1682,7 +1682,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "168",
@@ -1692,7 +1692,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "169",
@@ -1702,7 +1702,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "170",
@@ -1712,7 +1712,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "17 "
+                        "shop_id" => "17"
                     ],
                     [
                         "product_id" => "171",
@@ -1722,7 +1722,7 @@ class Products extends Seeder
                         "promotion_price" => "27000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "172",
@@ -1732,7 +1732,7 @@ class Products extends Seeder
                         "promotion_price" => "35000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "173",
@@ -1742,7 +1742,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "174",
@@ -1752,7 +1752,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "175",
@@ -1762,7 +1762,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "176",
@@ -1772,7 +1772,7 @@ class Products extends Seeder
                         "promotion_price" => "32000",
                         "isActive" => true,
                         "category_id" => "9",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "177",
@@ -1782,7 +1782,7 @@ class Products extends Seeder
                         "promotion_price" => "7000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "178",
@@ -1792,7 +1792,7 @@ class Products extends Seeder
                         "promotion_price" => "17000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "179",
@@ -1802,7 +1802,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "180",
@@ -1812,7 +1812,7 @@ class Products extends Seeder
                         "promotion_price" => "14000",
                         "isActive" => true,
                         "category_id" => "1",
-                        "shop_id " => "18 "
+                        "shop_id" => "18"
                     ],
                     [
                         "product_id" => "181",
@@ -1822,7 +1822,7 @@ class Products extends Seeder
                         "promotion_price" => "59000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "182",
@@ -1832,7 +1832,7 @@ class Products extends Seeder
                         "promotion_price" => "59000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "183",
@@ -1842,7 +1842,7 @@ class Products extends Seeder
                         "promotion_price" => "52000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "184",
@@ -1852,7 +1852,7 @@ class Products extends Seeder
                         "promotion_price" => "59000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "185",
@@ -1862,7 +1862,7 @@ class Products extends Seeder
                         "promotion_price" => "57000",
                         "isActive" => true,
                         "category_id" => "25",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "186",
@@ -1872,7 +1872,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "187",
@@ -1882,7 +1882,7 @@ class Products extends Seeder
                         "promotion_price" => "49000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "188",
@@ -1892,7 +1892,7 @@ class Products extends Seeder
                         "promotion_price" => "45000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "189",
@@ -1902,7 +1902,7 @@ class Products extends Seeder
                         "promotion_price" => "49000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "190",
@@ -1912,7 +1912,7 @@ class Products extends Seeder
                         "promotion_price" => "42000",
                         "isActive" => true,
                         "category_id" => "26",
-                        "shop_id " => "19 "
+                        "shop_id" => "19"
                     ],
                     [
                         "product_id" => "191",
@@ -1922,7 +1922,7 @@ class Products extends Seeder
                         "promotion_price" => "116000",
                         "isActive" => true,
                         "category_id" => "20",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "192",
@@ -1932,7 +1932,7 @@ class Products extends Seeder
                         "promotion_price" => "116000",
                         "isActive" => true,
                         "category_id" => "20",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "193",
@@ -1942,7 +1942,7 @@ class Products extends Seeder
                         "promotion_price" => "116000",
                         "isActive" => true,
                         "category_id" => "20",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "194",
@@ -1952,7 +1952,7 @@ class Products extends Seeder
                         "promotion_price" => "34000",
                         "isActive" => true,
                         "category_id" => "23",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "195",
@@ -1962,7 +1962,7 @@ class Products extends Seeder
                         "promotion_price" => "25000",
                         "isActive" => true,
                         "category_id" => "23",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "196",
@@ -1972,7 +1972,7 @@ class Products extends Seeder
                         "promotion_price" => "34000",
                         "isActive" => true,
                         "category_id" => "23",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "197",
@@ -1982,7 +1982,7 @@ class Products extends Seeder
                         "promotion_price" => "107000",
                         "isActive" => true,
                         "category_id" => "14",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "198",
@@ -1992,7 +1992,7 @@ class Products extends Seeder
                         "promotion_price" => "52000",
                         "isActive" => true,
                         "category_id" => "14",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "199",
@@ -2002,7 +2002,7 @@ class Products extends Seeder
                         "promotion_price" => "76000",
                         "isActive" => true,
                         "category_id" => "14",
-                        "shop_id " => "20 "
+                        "shop_id" => "20"
                     ],
                     [
                         "product_id" => "200",
@@ -2012,7 +2012,7 @@ class Products extends Seeder
                         "promotion_price" => "53000",
                         "isActive" => true,
                         "category_id" => "14",
-                        "shop_id " => "20"
+                        "shop_id" => "20"
                     ]
                     
         ]);
