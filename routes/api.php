@@ -24,5 +24,7 @@ Route::get('/get-shops/{id}',[APIController::class,'getOneShops']);
 
 Route::get('/get-categories/{id}',[APIController::class,'getCategories']);
 Route::get('/get-products/{id}',[APIController::class,'getProductsBaseOnShop']);
+Route::get('/get-products',[APIController::class,'getProducts']);
+Route::get('/get-products/{id}',[APIController::class,'getOneProducts']);
 
 

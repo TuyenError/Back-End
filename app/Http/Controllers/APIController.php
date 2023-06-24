@@ -61,6 +61,12 @@ class APIController extends Controller
         $products = Products::all();
         return response()->json($products);
     }
+    public function getOneProducts($id)
+    {
+        $products = Products::where('product_id', $id)->first();
+        return response()->json($products);
+    }
+    
     public function getProductsBaseOnShop($shop_id)
     {
         $products = DB::select("
