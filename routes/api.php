@@ -37,4 +37,6 @@ Route::get('/get-products/{id}',[APIController::class,'getOneProducts']);
 Route::get('/get-products-category/{id}',[APIController::class,'getProductsFlowCategory']);
 
 
+Route::get('/get-cart',[APIController::class,'getCart']);
+Route::post('/add-to-cart',[APIController::class,'addToCart']);
 

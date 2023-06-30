@@ -16,7 +16,7 @@ class Shops extends Seeder
     {
         DB::table('shops')->insert([
             [
-                'shop_id' => 1,
+                'id' => 1,
                 'name' => 'Cơm Gà Nam Chợ Mới - Hoàng Diệu',
                 'location' => '589 Hoàng Diệu, P. Hòa Thuận Đông, Quận Hải Châu, Đà Nẵng',
                 'description' => "Quán ăn, Giao cơm văn phòng-Món Việt- Sinh viên, Gia đình ",
@@ -26,7 +26,7 @@ class Shops extends Seeder
                 'user_id' => 1,
             ],
             [
-                'shop_id' => 2,
+                'id' => 2,
                 'name' => 'Trà Sữa Money - Nguyễn Du',
                 'location' => '19 Nguyễn Du, P. Thạch Thang, Quận Hải Châu, Đà Nẵng',
                 'description' => "Café/Dessert-Món Việt- Sinh viên, Cặp đôi",
@@ -36,7 +36,7 @@ class Shops extends Seeder
                 'user_id' => 2,
             ],
             [
-                'shop_id' => 3,
+                'id' => 3,
                 'name' => 'XIU Milk - Lê Đình Lý',
                 'location' => '173 Lê Đình Lý, P. Hòa Thuận Nam, Quận Hải Châu, Đà Nẵng',
                 'description' => "Café/Dessert-Món Việt- Cặp đôi, Gia đình",
@@ -46,7 +46,7 @@ class Shops extends Seeder
                 'user_id' => 3
             ],
             [
-                'shop_id' => 4,
+                'id' => 4,
                 'name' => 'Tiệm Bánh Bò Sữa - Bánh Mì Phô Mai Bơ Tỏi - Hải Phòng',
                 'location' => '322/3 Hải Phòng, P. Chính Gián, Quận Thanh Khê, Đà Nẵng',
                 'description' => "Shop Online-Món Hàn- Sinh viên, Gia đình",
@@ -56,7 +56,7 @@ class Shops extends Seeder
                 'user_id' => 4,
             ],
             [
-                'shop_id' => 5,
+                'id' => 5,
                 'name' => 'Bún Đậu Mắm Tôm - Bếp Tiên',
                 'location' => '278 Tô Hiến Thành, Quận Sơn Trà, Đà Nẵng',
                 'description' => "Quán ăn, Giao cơm văn phòng-Món Việt- Sinh viên, Cặp đôi, Nhóm hội, Giới văn phòng, Khách du lịch",
@@ -66,7 +66,7 @@ class Shops extends Seeder
                 'user_id' => 5,
             ],
             [
-                'shop_id' => 6,
+                'id' => 6,
                 'name' => 'Gà rán và Mì Ý - Jollibee - Ngô Quyền',
                 'location' => 'Tầng 4, Tầng 4, Vincom Center, 910A Ngô Quyền, P. An Hải Bắc, Quận Sơn Trà, Đà Nẵng',
                 'description' => "Nhà hàng-Philippines- Cặp đôi, Gia đình, Nhóm hội",
@@ -76,7 +76,7 @@ class Shops extends Seeder
                 'user_id' => 6,
             ],
             [
-                'shop_id' => 7,
+                'id' => 7,
                 'name' => 'Cafe & Trà Sữa BandB - Hà Huy Tập',
                 'location' => '160 Hà Huy Tập, P. Hòa Khê,  Quận Thanh Khê, Đà Nẵng',
                 'description' => "Café/Dessert-Món Việt- Cặp đôi, Gia đình, Nhóm hội- Chi nhánh",
@@ -86,7 +86,7 @@ class Shops extends Seeder
                 'user_id' => 7,
             ],
             [
-                'shop_id' => 8,
+                'id' => 8,
                 'name' => 'Trà Sữa Ông Thọ - Trịnh Công Sơn',
                 'location' => '96 Trịnh Công Sơn, P. Hòa CƯờng Nam,  Quận Hải Châu, Đà Nẵng',
                 'description' => "Ăn vặt/vỉa hè-Món Việt- Sinh viên, Cặp đôi, Nhóm hội- Chi nhánh",
@@ -96,7 +96,7 @@ class Shops extends Seeder
                 'user_id' => 8,
             ],
             [
-                'shop_id' => 9,
+                'id' => 9,
                 'name' => 'My Love - Kem & Trà Sữa',
                 'location' => '75 Bùi Dương Lịch, P. Nại Hiên Đông,  Quận Sơn Trà, Đà Nẵng',
                 'description' => "Café/Dessert-Món Việt- Sinh viên, Nhóm hội",
@@ -106,7 +106,7 @@ class Shops extends Seeder
                 'user_id' => 9,
             ],
             [
-                'shop_id' => 10,
+                'id' => 10,
                 'name' => 'Mai Coffee & Beer',
                 'location' => 'Lô 1 09 Phạm Văn Đồng, P. An Hải Bắc,  Quận Sơn Trà, Đà Nẵng',
                 'description' => "Nhà hàng-Món Việt- Cặp đôi, Gia đình, Nhóm hội",
@@ -116,7 +116,7 @@ class Shops extends Seeder
                 'user_id' => 10,
             ],
             [
-                'shop_id' => 11,
+                'id' => 11,
                 'name' => 'TRÀ SỮA GONG CHA KHAI TRƯƠNG',
                 'location' => '1 Nguyễn Văn Linh, P. Bình Hiên,  Quận Hải Châu, Đà Nẵng',
                 'description' => "Café/Dessert-Đài Loan- Cặp đôi, Gia đình, Giới văn phòng",
@@ -126,7 +126,7 @@ class Shops extends Seeder
                 'user_id' => 11,
             ],
             [
-                'shop_id' => 12,
+                'id' => 12,
                 'name' => 'Phúc Long Nguyễn Văn Linh Đà Nẵng',
                 'location' => '59 - 61 Nguyễn Văn Linh, P. Bình Hiên,  Quận Hải Châu, Đà Nẵng',
                 'description' => "Café/Dessert-Món Việt- Cặp đôi, Gia đình, Giới văn phòng ",
@@ -136,7 +136,7 @@ class Shops extends Seeder
                 'user_id' => 12,
             ],
             [
-                'shop_id' => 13,
+                'id' => 13,
                 'name' => 'KOI Thé - Nguyễn Văn Linh',
                 'location' => '87 Nguyễn Văn Linh, P. Nam Dương,  Quận Hải Châu, Đà Nẵng',
                 'description' => " \n Café/Dessert-Món Việt- Cặp đôi, Gia đình, Nhóm hội",
@@ -146,7 +146,7 @@ class Shops extends Seeder
                 'user_id' => 13,
             ],
             [
-                'shop_id' => 14,
+                'id' => 14,
                 'name' => 'Highlands Coffee - Điện Biên Phủ',
                 'location' => '239 Điện Biên Phủ, P. Hoà Khê,  Quận Thanh Khê, Đà Nẵng',
                 'description' => " \n Café/Dessert-Món Việt- Cặp đôi, Gia đình, Nhóm hội, Giới văn phòng",
@@ -156,7 +156,7 @@ class Shops extends Seeder
                 'user_id' => 14,
             ],
             [
-                'shop_id' => 15,
+                'id' => 15,
                 'name' => 'Trà Sữa Xingfu Cha - Ngô Gia Tự',
                 'location' => '107 Ngô Gia Tự, P. Hải Châu 1,  Quận Hải Châu, Đà Nẵng',
                 'description' => "Quán ăn - Chi nhánh",
@@ -166,7 +166,7 @@ class Shops extends Seeder
                 'user_id' => 15,
             ],
             [
-                'shop_id' => 16,
+                'id' => 16,
                 'name' => 'Tiệm Nhà Nhung - Chân Gà Sốt Thái - Hoàng Dư Khương',
                 'location' => '106 Hoàng Dư Khương, P. Khuê Trung,  Quận Cẩm Lệ, Đà Nẵng',
                 'description' => "Shop Online-Món Việt- Sinh viên, Cặp đôi, Gia đình, Nhóm hội",
@@ -176,7 +176,7 @@ class Shops extends Seeder
                 'user_id' => 16,
             ],
             [
-                'shop_id' => 17,
+                'id' => 17,
                 'name' => 'Milano Coffee - Mẹ Thứ',
                 'location' => '318 Mẹ Thứ,  Quận Cẩm Lệ, Đà Nẵng',
                 'description' => "Café/Dessert-Món Việt- Sinh viên, Nhóm hội, Giới văn phòng",
@@ -186,7 +186,7 @@ class Shops extends Seeder
                 'user_id' => 17,
             ],
             [
-                'shop_id' => 18,
+                'id' => 18,
                 'name' => 'Bông Food & Drink - Điện Biên Phủ',
                 'location' => '559 Điện Biên Phủ,  Quận Thanh Khê, Đà Nẵng',
                 'description' => " Café/Dessert-Món Việt- Cặp đôi, Gia đình",
@@ -196,7 +196,7 @@ class Shops extends Seeder
                 'user_id' => 18,
             ],
             [
-                'shop_id' => 19,
+                'id' => 19,
                 'name' => 'Trà Sữa Royaltea - Phạm Văn Đồng',
                 'location' => '168 Phạm Văn Đồng, P. An Hải Bắc,  Quận Sơn Trà, Đà Nẵng',
                 'description' => "Café/Dessert-Món Trung Hoa- Cặp đôi, Gia đình",
@@ -206,7 +206,7 @@ class Shops extends Seeder
                 'user_id' => 19,
             ],
             [
-                'shop_id' => 20,
+                'id' => 20,
                 'name' => 'Kimbap Đà Nẵng - Shop Online',
                 'location' => '27/11 Nguyễn Trường Tộ, P. Bình Hiên,  Quận Hải Châu, Đà Nẵng',
                 'description' => "Shop Online-Món Việt, Món Hàn- Gia đình, Nhóm hội, Giới văn phòng",

@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Carts;
 use App\Models\Categories;
 use Illuminate\Support\Facades\Http;
 use App\Models\Products;
 use App\Models\Shops;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class APIController extends Controller
 {
@@ -16,7 +20,7 @@ class APIController extends Controller
         $data = $response->json();
         foreach ($data as $productData) {
             $product = new Products();
-            $product->product_id = $productData['product_id'];
+            $product->id = $productData['product_id'];
             $product->name = $productData['name'];
             $product->price = $productData['price'];
             $product->image = $productData['image'];
@@ -39,7 +43,7 @@ class APIController extends Controller
 
     public function getOneShops($shop_id)
     {
-        $shop = Shops::where('shop_id', $shop_id)->first();
+        $shop = Shops::where('id', $shop_id)->first();
         return response()->json($shop);
     }
     // api get all category
@@ -53,7 +57,7 @@ class APIController extends Controller
     {
         $categories = DB::select("
             SELECT * FROM categories
-            WHERE category_id IN (
+            WHERE id IN (
                 SELECT category_id FROM products WHERE shop_id = $id
             )
         ");
