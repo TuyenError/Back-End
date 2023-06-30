@@ -42,7 +42,12 @@ class APIController extends Controller
         $shop = Shops::where('shop_id', $shop_id)->first();
         return response()->json($shop);
     }
-
+    // api get all category
+    public function getAllCategory()
+    {
+        $categories = Categories::all();
+        return response()->json($categories);
+    }
     // api get categpries
     public function getCategories($id)
     {
@@ -61,11 +66,26 @@ class APIController extends Controller
         $products = Products::all();
         return response()->json($products);
     }
+    public function getOneProducts($id)
+    {
+        $products = Products::where('product_id', $id)->first();
+        return response()->json($products);
+    }
+
     public function getProductsBaseOnShop($shop_id)
     {
         $products = DB::select("
             SELECT * FROM products
             WHERE shop_id = $shop_id
+        ");
+        return response()->json($products);
+    }
+
+    public function getProductsFlowCategory($category_id)
+    {
+        $products = DB::select("
+            SELECT * FROM products
+            WHERE category_id = $category_id
         ");
         return response()->json($products);
     }
