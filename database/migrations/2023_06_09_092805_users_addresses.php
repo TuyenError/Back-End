@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('users_addresses', function (Blueprint $table) {
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('address_id');
-            $table->foreign('user_id')->references('user_id')->on('users');
-            $table->foreign('address_id')->references('address_id')->on('addresses');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('address_id')->references('id')->on('addresses');
             $table->timestamps();
         });
     }

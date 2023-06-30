@@ -23,5 +23,7 @@ class Users extends Model
     public function order() {
         return $this->belongsTo(Order::class);
     }
-
+    public function carts() {
+        return $this->belongsToMany(Carts::class);
+    }
 }
