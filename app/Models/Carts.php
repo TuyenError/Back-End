@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+// use App\Models\Products;
 
 class Carts extends Model
 {
@@ -14,12 +15,12 @@ class Carts extends Model
         'product_id',
         'quantity',
     ];
-
+    protected $with = ['products', 'users'];
     public function users() {
-        return $this->hasMany(Users::class,'user_id');
+        return $this->belongsTo(Users::class,'user_id' , 'id');
     }
 
     public function products() {
-        return $this->hasMany(Products::class,'product_id');
+        return $this->belongsTo(Products::class,'product_id', 'id');
     }
 }
