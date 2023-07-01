@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Categories;
+use App\Models\Users;
 use Illuminate\Support\Facades\Http;
 use App\Models\Products;
 use App\Models\Shops;
@@ -12,10 +13,21 @@ class APIController extends Controller
 {
     public function importFromAPI()
     {
+
         $response = Http::get('https://localhost:3000/products');
         $data = $response->json();
+
+        $response = Http::get('http://localhost:3000/products');
+
+        $data = $response->json();
+
+
+
         foreach ($data as $productData) {
+            // dd($productData);
+
             $product = new Products();
+
             $product->product_id = $productData['product_id'];
             $product->name = $productData['name'];
             $product->price = $productData['price'];
@@ -25,6 +37,11 @@ class APIController extends Controller
             $product->category_id = $productData['category_id'];
             $product->shop_id = $productData['shop_id'];
             $product->save();
+
+            dd($product);
+
+            // $product->save();
+
         }
 
         return response()->json(['message' => 'Import successful']);
@@ -81,12 +98,18 @@ class APIController extends Controller
         return response()->json($products);
     }
 
+<<<<<<< Updated upstream
     public function getProductsFlowCategory($category_id)
     {
         $products = DB::select("
             SELECT * FROM products
             WHERE category_id = $category_id
         ");
+=======
+    public function getUsers()
+    {
+        $products = Users::all();
+>>>>>>> Stashed changes
         return response()->json($products);
     }
 }

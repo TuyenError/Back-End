@@ -3,6 +3,11 @@
 use App\Http\Controllers\APIController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\UserController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
     return $request->user();
 });
+
 
 Route::get('/get-shops',[APIController::class,'getShops']);
 
@@ -35,6 +41,14 @@ Route::get('/get-products/{id}',[APIController::class,'getOneProducts']);
 
 // select products theo category
 Route::get('/get-products-category/{id}',[APIController::class,'getProductsFlowCategory']);
+
+
+// đăng ký account
+Route::post('/register', [UserController::class, 'Register']);
+
+Route::get('/users', [APIController::class, 'getUsers']);
+
+Route::post('/login', [UserController::class, 'login']);
 
 
 
