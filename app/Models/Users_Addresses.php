@@ -11,10 +11,10 @@ class Users_Addresses extends Model
     protected $table = 'users_adresses';
 
     public function users() {
-        return $this->hasMany(Users::class,'user_id');
+        return $this->belongsTo(Users::class,'user_id', 'id');
     }
 
     public function addresses() {
-        return $this->hasMany(Addresses::class,'address_id');
+        return $this->belongsTo(Addresses::class,'address_id', 'id');
     }
 }

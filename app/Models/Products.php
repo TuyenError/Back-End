@@ -19,4 +19,7 @@ class Products extends Model
     public function orders_details() {
         return $this->belongsTo(Order_details::class);
     }
+    public function carts() {
+        return $this->hasMany(Carts::class,'product_id');
+    }
 }
