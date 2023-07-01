@@ -3,6 +3,11 @@
 use App\Http\Controllers\APIController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\UserController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,5 +44,13 @@ Route::get('/get-products-category/{id}',[APIController::class,'getProductsFlowC
 Route::get('/get-cart',[APIController::class,'getCart']);
 Route::post('/add-to-cart',[APIController::class,'addToCart']);
 Route::put('/update-quantity/{cart_id}/{scope}',[APIController::class,'updateQuantity']);
+
+// đăng ký account
+Route::post('/register', [UserController::class, 'Register']);
+
+Route::get('/users', [APIController::class, 'getUsers']);
+
+Route::post('/login', [UserController::class, 'login']);
+
 
 

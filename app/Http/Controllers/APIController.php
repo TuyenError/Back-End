@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Carts;
 use App\Models\Categories;
+use App\Models\Users;
 use Illuminate\Support\Facades\Http;
 use App\Models\Products;
 use App\Models\Shops;
@@ -16,9 +17,19 @@ class APIController extends Controller
 {
     public function importFromAPI()
     {
+
         $response = Http::get('https://localhost:3000/products');
         $data = $response->json();
+
+        $response = Http::get('http://localhost:3000/products');
+
+        $data = $response->json();
+
+
+
         foreach ($data as $productData) {
+            // dd($productData);
+
             $product = new Products();
             $product->id = $productData['product_id'];
             $product->name = $productData['name'];
@@ -29,6 +40,11 @@ class APIController extends Controller
             $product->category_id = $productData['category_id'];
             $product->shop_id = $productData['shop_id'];
             $product->save();
+
+            dd($product);
+
+            // $product->save();
+
         }
 
         return response()->json(['message' => 'Import successful']);
@@ -91,6 +107,11 @@ class APIController extends Controller
             SELECT * FROM products
             WHERE category_id = $category_id
         ");
+    }
+
+    public function getUsers()
+    {
+        $products = Users::all();
         return response()->json($products);
     }
 
@@ -99,7 +120,7 @@ class APIController extends Controller
         Session::put('user', 1);
         if (Session::has('user')) {
             $user_id = Session::get('user');
-           
+
             // $carts = DB::select("
             //     SELECT * FROM products
             //     WHERE id IN (
@@ -180,7 +201,7 @@ class APIController extends Controller
     public function updateQuantity($cart_id, $scope) {
         $cart = Carts::where('id',$cart_id)->first();
         if ($scope === 'inc') {
-            $cart -> quantity += 1; 
+            $cart -> quantity += 1;
             $cart -> update();
         }
         else if ($scope === 'dec') {
