@@ -46,11 +46,11 @@ Route::post('/add-to-cart',[APIController::class,'addToCart']);
 Route::put('/update-quantity/{cart_id}/{scope}',[APIController::class,'updateQuantity']);
 
 // đăng ký account
-Route::post('/register', [UserController::class, 'Register']);
-
-Route::get('/users', [APIController::class, 'getUsers']);
-
-Route::post('/login', [UserController::class, 'login']);
+Route::post('/register',[UserController::class,'Register']);
+Route::post('/login',[UserController::class,'Login']);
+Route::middleware(['auth:sanctum'])->group(function () {
+Route::post('/logout',[UserController::class,'Logout']);
+});
 
 
 

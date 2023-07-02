@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'phone',
+        'avatar',
+        'role_id'
     ];
 
     /**
@@ -42,4 +45,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function tokens()
+    {
+        return $this->hasMany('App\Models\Token'); // Thay 'App\Models\Token' bằng tên mô hình token của bạn
+    }
 }

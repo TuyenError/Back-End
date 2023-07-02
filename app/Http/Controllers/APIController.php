@@ -31,7 +31,12 @@ class APIController extends Controller
             // dd($productData);
 
             $product = new Products();
+
             $product->id = $productData['product_id'];
+
+
+            $product->product_id = $productData['product_id'];
+
             $product->name = $productData['name'];
             $product->price = $productData['price'];
             $product->image = $productData['image'];
@@ -107,11 +112,6 @@ class APIController extends Controller
             SELECT * FROM products
             WHERE category_id = $category_id
         ");
-    }
-
-    public function getUsers()
-    {
-        $products = Users::all();
         return response()->json($products);
     }
 
