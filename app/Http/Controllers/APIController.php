@@ -99,12 +99,6 @@ class APIController extends Controller
         Session::put('user', 1);
         if (Session::has('user')) {
             $user_id = Session::get('user');
-           
-            // $carts = DB::select("
-            //     SELECT * FROM products
-            //     WHERE id IN (
-            //     SELECT product_id FROM carts WHERE user_id = $user_id )
-            // ");
             $carts = Carts::where('user_id', $user_id)->get();
             return response()->json($carts);
         }
@@ -183,6 +177,7 @@ class APIController extends Controller
             $cart -> quantity += 1; 
             $cart -> update();
         }
+        
         else if ($scope === 'dec') {
             $cart -> quantity -= 1;
             $cart -> update();
