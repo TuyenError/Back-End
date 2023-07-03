@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Models\Carts;
@@ -7,6 +6,8 @@ use App\Models\Categories;
 use Illuminate\Support\Facades\Http;
 use App\Models\Products;
 use App\Models\Shops;
+use App\Models\User;
+use App\Models\Users;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
@@ -34,49 +35,65 @@ class APIController extends Controller
         return response()->json(['message' => 'Import successful']);
     }
 
-    //  api get shoops
+
+    // API: Lấy danh sách shop
     public function getShops()
     {
         $shops = Shops::all();
         return response()->json($shops);
     }
 
-    public function getOneShops($shop_id)
+    // API: Lấy thông tin của một shop
+    public function getOneShop($shop_id)
     {
         $shop = Shops::where('id', $shop_id)->first();
         return response()->json($shop);
     }
-    // api get all category
-    public function getAllCategory()
+    public function deleteShop($shop_id)
+    {
+        $shop = Shops::findOrFail($shop_id);  
+        if ($shop) {
+            $shop->delete();
+            return response()->json(['message' => 'Shop deleted']);
+        }
+        return response()->json(['error' => 'Shop not found'], 404);
+    }
+    
+    // API: Lấy danh sách danh mục
+    public function getAllCategories()
     {
         $categories = Categories::all();
         return response()->json($categories);
     }
-    // api get categpries
-    public function getCategories($id)
+
+    // API: Lấy danh sách danh mục theo shop
+    public function getCategoriesByShop($shop_id)
     {
         $categories = DB::select("
             SELECT * FROM categories
             WHERE id IN (
-                SELECT category_id FROM products WHERE shop_id = $id
+                SELECT category_id FROM products WHERE shop_id = $shop_id
             )
         ");
         return response()->json($categories);
     }
 
-    // api get products
+    // API: Lấy danh sách sản phẩm
     public function getProducts()
     {
         $products = Products::all();
         return response()->json($products);
     }
-    public function getOneProducts($id)
+
+    // API: Lấy thông tin của một sản phẩm
+    public function getOneProduct($product_id)
     {
-        $products = Products::where('product_id', $id)->first();
-        return response()->json($products);
+        $product = Products::where('id', $product_id)->first();
+        return response()->json($product);
     }
 
-    public function getProductsBaseOnShop($shop_id)
+    // API: Lấy danh sách sản phẩm theo shop
+    public function getProductsByShop($shop_id)
     {
         $products = DB::select("
             SELECT * FROM products
@@ -85,12 +102,28 @@ class APIController extends Controller
         return response()->json($products);
     }
 
-    public function getProductsFlowCategory($category_id)
+    // API: Lấy danh sách sản phẩm theo danh mục
+    public function getProductsByCategory($category_id)
     {
         $products = DB::select("
             SELECT * FROM products
             WHERE category_id = $category_id
         ");
         return response()->json($products);
+    }
+    public function getUser(){
+        $user = User::all();
+        return response()->json($user);
+    }
+
+    public function updateUser($id_user) {
+        $user = Users::where('user_id',$id_user)->first();
+        $user->isActive = 0;
+        // $user->update();
+        $user->save();
+        return response()->json([
+            'status' => 200,
+            'message' => 'Xóa người dùng thành công',
+        ]) ;
     }
 }

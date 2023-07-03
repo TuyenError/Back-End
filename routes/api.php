@@ -21,7 +21,7 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 
 Route::get('/get-shops',[APIController::class,'getShops']);
 
-Route::get('/get-shops/{id}',[APIController::class,'getOneShops']);
+Route::get('/get-shops/{id}',[APIController::class,'getOneShop']);
 
 Route::get('/get-categories/{id}',[APIController::class,'getCategories']);
 
@@ -33,10 +33,15 @@ Route::get('/get-products',[APIController::class,'getProducts']);
 
 Route::get('/get-products/{id}',[APIController::class,'getOneProducts']);
 
+Route::get('/get-user',[APIController::class,'getUser']);
+Route::put('/delete-user/{id_user}',[APIController::class,'updateUser']);
+
 // select products theo category
 Route::get('/get-products-category/{id}',[APIController::class,'getProductsFlowCategory']);
 
 
 Route::get('/get-cart',[APIController::class,'getCart']);
 Route::post('/add-to-cart',[APIController::class,'addToCart']);
+Route::delete('/delete-shop/{shop_id}', [APIController::class, 'deleteShop']);
+
 
