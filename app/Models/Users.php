@@ -15,7 +15,7 @@ class Users extends Model
     }
 
     public function shops() {
-        return $this->belongsTo(Shops::class);
+        return $this->belongsTo(Shops::class,'user_id', 'id');
     }
     public function users_addresses() {
         return $this->belongsToMany(Users_Addresses::class);
@@ -24,6 +24,6 @@ class Users extends Model
         return $this->belongsTo(Order::class);
     }
     public function carts() {
-        return $this->belongsToMany(Carts::class);
+        return $this->hasMany(Carts::class);
     }
 }

@@ -10,13 +10,12 @@ class Shops extends Model
 {
     use HasFactory;
     protected $table = 'shops';
-
+    // protected $with = ['users'];
     public function user() {
         return $this->hasOne(Users::class,'user_id');
     }
     public function product() {
         return $this->belongsTo(Products::class);
     }
-
     
 }

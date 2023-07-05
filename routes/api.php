@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\PaymentController;
 
 
 
@@ -41,16 +43,18 @@ Route::get('/get-products/{id}',[APIController::class,'getOneProducts']);
 Route::get('/get-products-category/{id}',[APIController::class,'getProductsFlowCategory']);
 
 // cart
-Route::get('/get-cart',[APIController::class,'getCart']);
-Route::post('/add-to-cart',[APIController::class,'addToCart']);
-Route::put('/update-quantity/{cart_id}/{scope}',[APIController::class,'updateQuantity']);
+Route::get('/get-cart',[CartController::class,'getCart']);
+Route::post('/add-to-cart',[CartController::class,'addToCart']);
+Route::put('/update-quantity/{cart_id}/{scope}',[CartController::class,'updateQuantity']);
+Route::delete('/delete/{cart_id}',[CartController::class,'Delete']);
 
 // đăng ký account
 Route::post('/register',[UserController::class,'Register']);
 Route::post('/login',[UserController::class,'Login']);
 Route::middleware(['auth:sanctum'])->group(function () {
-Route::post('/logout',[UserController::class,'Logout']);
+    Route::post('/logout',[UserController::class,'Logout']);
 });
 
+Route::post('/payment',[PaymentController::class,'payment_VnPay']);
 
 

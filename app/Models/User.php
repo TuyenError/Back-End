@@ -46,8 +46,8 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function tokens()
-    {
-        return $this->hasMany('App\Models\Token'); // Thay 'App\Models\Token' bằng tên mô hình token của bạn
-    }
+    // public function tokens()
+    // {
+    //     return $this->hasMany('App\Models\Token'); // Thay 'App\Models\Token' bằng tên mô hình token của bạn
+    // }
 }
