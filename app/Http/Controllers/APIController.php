@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class APIController extends Controller
 {
     public function importFromAPI()
@@ -115,6 +116,47 @@ class APIController extends Controller
         return response()->json($products);
     }
 
+    public function getUser(){
+        $user = Users::all();
+        return response()->json($user);
+    }
+
+    public function getShopActive() {
+        $shop = DB::select("
+        SELECT * FROM shops
+        WHERE user_id IN (
+            SELECT user_id FROM users WHERE isActive = true
+        )
+    ");
+    return response()->json($shop);
+    }
+    
+    public function updateUserStatue(Request $request, $user_id)
+{
+    $user = Users::where('user_id', $user_id)->first();
+    if ($user->isActive == true) {
+        $user->isActive = false;
+        $user->save();
+        return response()->json(['message' => true]);
+    } else {
+        $user->isActive = true;
+        $user->save();
+        return response()->json(['message' => true]);
+    }
+}
+
+    
+    // public function updateUser($id_user) {
+    //     $user = Users::where('user_id',$id_user)->first();
+    //     $user->isActive = 0;
+    //     // $user->update();
+    //     $user->save();
+    //     return response()->json([
+    //         'status' => 200,
+    //         'message' => 'Xóa người dùng thành công',
+    //     ]) ;
+    // }
+
     // api get cart
     public function getCart(){
         Session::put('user', 1);
@@ -213,5 +255,6 @@ class APIController extends Controller
             'message' => 'Cập nhật số lượng thành công',
         ]);
     }
+
 
 }

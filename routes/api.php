@@ -28,6 +28,7 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 Route::get('/get-shops',[APIController::class,'getShops']);
 Route::get('/get-shops/{id}',[APIController::class,'getOneShops']);
 Route::get('/get-categories/{id}',[APIController::class,'getCategoriesBaseOnShop']);
+Route::get('/get-shopActive',[APIController::class,'getShopActive']);
 
 Route::get('/get-categories',[APIController::class,'getAllCategory']);
 
@@ -36,6 +37,11 @@ Route::get('/get-products-shop/{id}',[APIController::class,'getProductsBaseOnSho
 Route::get('/get-products',[APIController::class,'getProducts']);
 
 Route::get('/get-products/{id}',[APIController::class,'getOneProducts']);
+
+Route::get('/get-user',[APIController::class,'getUser']);
+
+
+Route::get('/users_update-statue/{user_id}', [APIController::class, 'updateUserStatue']);
 
 // select products theo category
 Route::get('/get-products-category/{id}',[APIController::class,'getProductsFlowCategory']);
