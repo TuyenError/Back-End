@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -14,8 +15,10 @@ class UserController extends Controller
     public function Register(Request $request) {
         $validator = Validator::make($request -> all(), [
             'fullName' => 'required||max:191',
+            'phone' => 'required',
             'email' => 'required|email|max:191|unique:users,email',
             'password' => 'required||min:8',
+            'confirmPassword' => 'required|same:password',
         ]);
         if ($validator -> fails()) {
             return response()->json([
@@ -71,7 +74,7 @@ class UserController extends Controller
             }
             else {
                 $token = $user->createToken($user->email.'_Token')->plainTextToken;
-
+                Auth::login($user);
                 return response()->json([
                     'status'=>200,
                     'username'=>$user->name,
