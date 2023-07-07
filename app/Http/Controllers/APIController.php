@@ -108,4 +108,11 @@ class APIController extends Controller
         ");
         return response()->json($products);
     }
+    public function getOneUser() {
+        if (auth('sanctum')->check()) {
+            $user_id = auth('sanctum')->user()->id;
+            $user = Users::where('id',$user_id)->first();
+            return response()->json($user);
+        }
+    }
 }

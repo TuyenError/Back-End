@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminShopController;
 use App\Http\Controllers\APIController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,8 @@ use App\Http\Controllers\PaymentController;
 Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
     return $request->user();
 });
+// get user
+Route::get('/get-one-user',[APIController::class,'getOneUser']);
 
 // shop
 Route::get('/get-shops',[APIController::class,'getShops']);
@@ -55,6 +58,16 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('/logout',[UserController::class,'Logout']);
 });
 
-Route::post('/payment',[PaymentController::class,'payment_VnPay']);
+
+// payment
+Route::post('/payment/{radioValue}/{totalPrice}',[PaymentController::class,'payment_VnPay']);
+Route::post('/thankfull/{radioValue}/{totalPrice}',[PaymentController::class,'payment_VnPay']);
+Route::post('/order',[PaymentController::class,'Order']);
+
+// admin shop
+Route::get('/get-product-AdminShop',[AdminShopController::class,'getProductAdminShop']);
+Route::post('/add-product',[AdminShopController::class,'addProduct']);
+Route::delete('/delete-product/{id}',[AdminShopController::class,'deleteProduct']);
+Route::post('/update-product/{id}',[AdminShopController::class,'updateProduct']);
 
 

@@ -10,9 +10,9 @@ class Shops extends Model
 {
     use HasFactory;
     protected $table = 'shops';
-    // protected $with = ['users'];
-    public function user() {
-        return $this->hasOne(Users::class,'user_id');
+    protected $with = ['users'];
+    public function users() {
+        return $this->hasOne(Users::class,'id');
     }
     public function product() {
         return $this->belongsTo(Products::class);
