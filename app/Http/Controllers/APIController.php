@@ -144,7 +144,6 @@ class APIController extends Controller
     }
 }
 
-
     // api get cart
     public function getCart(){
         Session::put('user', 1);
