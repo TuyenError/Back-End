@@ -9,7 +9,7 @@ class Users extends Model
 {
     use HasFactory;
     protected $table ='users';
-    protected $primaryKey = 'user_id';
+    protected $primaryKey = 'id';
 
     public function roles() {
         return $this->hasOne(Roles::class,'role_id') ;
