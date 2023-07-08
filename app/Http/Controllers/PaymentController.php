@@ -72,37 +72,36 @@ class PaymentController extends Controller
 
         return response()->json($returnData);
         }
+        
         elseif ($radioValue == 'momo') {
             
         }
-        else {
-        //     $returnData = array('code' => '00'
-        //     , 'message' => 'success'
-        //     , 'data' => $vnp_Url);
-
-        // return response()->json($returnData);
+        else {  
+            $returnData = array('code' => '01'
+            , 'message' => 'Đặt hàng thành công. Vui lòng chuẩn bị đầy đủ số tiền khi hàng được giao đến'
+            , 'data' => 'cảm ơn');
+        return response()->json($returnData);
         }
     }
 
-    public function Order(Request $request) {
+    public function OrderVnpay(Request $request) {
         if (auth('sanctum')->check()) {
             $user_id = auth('sanctum')->user()->id;
             $cart_id = Carts::where('user_id',$user_id)->pluck('id');
 
-            $dateTime = Carbon::createFromFormat('YmdHis', $request->vnp_PayDate);
-            // $formattedDateTime = $dateTime->toDateTimeString();
-            if ($request->vnp_BankCode == 'NCB') {
-                $payType = 'VNPAY';
-            }
+            $date=date_create($request->input('vnp_PayDate'));
+            echo date_format($date,"H:i d/m/Y");
+
             $order = new Orders();
-            $order->id = $request->vnp_TxnRef;
+            $order->id = $request->input('vnp_TxnRef');
             $order->user_id = $user_id;
             $order->cart_id = $cart_id[0];
-            $order->date = $dateTime;
-            $order->totalPrice = $request->vnp_Amount;
-            $order->payType = $payType;
-            $order->status = $request->vnp_OrderInfo;
+            $order->date = $date;
+            $order->totalPrice = $request->input('vnp_Amount');
+            $order->payType = 'VNPAY';
+            $order->status = $request->input('vnp_OrderInfo');
             $order->save();
         }
     }
+
 }

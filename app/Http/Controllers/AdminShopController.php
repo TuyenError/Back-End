@@ -3,9 +3,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Orders;
 use App\Models\Products;
 use App\Models\Shops;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminShopController extends Controller
 {
@@ -68,5 +70,29 @@ class AdminShopController extends Controller
                 'message' => 'Sản phẩm đã được cập nhật',
             ]);
         }
+    }
+    public function Order() {
+        if (auth('sanctum')->check()) {
+
+            $user_id = auth('sanctum')->user()->id;
+
+            $shop_id = Shops::where('user_id', $user_id)->pluck('id');
+
+            $order =DB::table('tbl_orders')
+            ->whereIn('cart_id', function ($query) use ($shop_id) {
+                $query->select('id')
+                    ->from('carts')
+                    ->whereIn('product_id', function ($subquery) use ($shop_id) {
+                        $subquery->select('id')
+                            ->from('products')
+                            ->where('shop_id', $shop_id);
+                    });
+            })
+            ->get();
+            return response()->json($order);
+        }
+    }
+    public function getProduct() {
+        
     }
 }
