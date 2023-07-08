@@ -62,12 +62,13 @@ Route::middleware(['auth:sanctum'])->group(function () {
 // payment
 Route::post('/payment/{radioValue}/{totalPrice}',[PaymentController::class,'payment_VnPay']);
 Route::post('/thankfull/{radioValue}/{totalPrice}',[PaymentController::class,'payment_VnPay']);
-Route::post('/order',[PaymentController::class,'Order']);
+Route::post('/order',[PaymentController::class,'OrderVnpay']);
 
 // admin shop
 Route::get('/get-product-AdminShop',[AdminShopController::class,'getProductAdminShop']);
 Route::post('/add-product',[AdminShopController::class,'addProduct']);
 Route::delete('/delete-product/{id}',[AdminShopController::class,'deleteProduct']);
 Route::post('/update-product/{id}',[AdminShopController::class,'updateProduct']);
+Route::get('/get-order',[AdminShopController::class,'Order']);
 
 

@@ -15,6 +15,7 @@ class Carts extends Model
         'product_id',
         'quantity',
     ];
+    
     protected $with = ['products', 'users'];
     public function users() {
         return $this->belongsTo(Users::class,'user_id' , 'id');
